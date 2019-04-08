@@ -1,0 +1,15 @@
+; Class: CSE 313 Machine Organization Lab
+; Section: 02
+; Instructor TalineGeorgiou
+; Term: Spring 2019
+; Name: Ken Lin
+; Lab#0: Hello World
+; Description: Program that displays "Hello World!", unsure as of yet if the quotation marks are also displayed.
+; Second Paragraph of Description. After running, the program outputs "Hello World!" without quotation marks.
+
+	  .ORIG x3000
+	  LEA R0, HW  ; loads the address of string, denoted 'HW'
+	  PUTS	      ; outputs the loaded data, the string
+	  HALT	      ; ends the program if it's running
+HW	.STRINGZ "Hello World!"
+	  .END	      ; tells the assembler to stop assembling the program
